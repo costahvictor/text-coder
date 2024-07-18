@@ -1,0 +1,179 @@
+.main__style {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    gap: 5rem;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.left__section{
+    padding: 0rem 0rem 0rem 5rem;
+}
+
+.right__section {
+    display: flex;
+    flex-direction: column;
+    padding-right: 0.1rem;
+    box-sizing: border-box;
+}
+
+.rectangle__style {
+    height: 32rem;
+    width: 18rem;
+    background-color: var(--second-color);
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Align items to the top */
+    box-shadow: 0.625rem 0.625rem 0.625rem rgb(0 0 0 / 8%);
+    box-sizing: border-box;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.container__text {
+    display: flex;
+    padding-left: 5rem;
+    padding-top: 4rem;
+}
+
+.container__content {
+    font-size: 1.5rem; /* Use lower case 'px' */
+    letter-spacing: 0.0625rem;
+    padding: 0.625rem;
+    height: 22rem; /* Adjust the height as needed */
+    border: none;
+    background: var(--first-color);
+    color: var(--third-color);
+    line-height: 1.5; /* Ensure proper line height */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    white-space: pre-wrap; /* Ensure text wraps correctly */
+    word-wrap: break-word; /* Ensure words wrap correctly */
+    resize: none; /* Prevent resizing if needed */
+}
+
+.container__content:focus {
+    outline: none;
+}
+
+.container__image--style {
+    max-width: 100%;
+}
+
+.bottom__block--style {
+    margin-left: 3.75rem;
+}
+
+.buttons {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.encrypt__style {
+    background: var(--third-color);
+    color: var(--second-color);
+    border-radius: 1.5rem;
+    width: 20.5rem;
+    height: 4.1875rem;
+    font-size: 1rem;
+    font-family: var(--first-font);
+    font-weight: 400;
+    box-shadow: 0.625rem 0.625rem 0.625rem rgb(0 0 0 / 8%);
+}
+
+.encrypt__style:hover {
+    background: #757FB2;
+}
+
+.decrypt__style {
+    background: var(--forth-color);
+    border-color: var(--third-color);
+    color: var(--third-color);
+    border-radius: 1.5rem;
+    width: 20.5rem;
+    height: 4.1875rem;
+    border: 0.0625rem solid;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: var(--first-font);
+    box-shadow: 0.625rem 0.625rem 0.625rem rgb(0 0 0 / 8%);
+}
+
+.decrypt__style:hover {
+    background: #E9ECF8;
+}
+
+.warning {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    gap: 0.5rem;
+    padding: 0rem 0rem 0.625rem 0.625rem;
+}
+
+.warning__image--style {
+    width: 1rem;
+    height: 1rem;
+}
+
+.warning__text--style {
+    font-weight: 400;
+    line-height: 1.5rem;
+    color: #495057;
+    font-size: 1rem;
+    white-space: pre-wrap;  /* Ensure text wraps correctly */
+}
+
+.text__notfound--style {
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 2.4rem;
+    text-align: center;
+    white-space: pre-wrap;  /* Ensure text wraps correctly */
+}
+
+.text__whattodo--style {
+    font-weight: 400;
+    font-size: 0.8rem;
+    line-height: 2rem;
+    text-align: center;
+    padding: 0% 10%;
+}
+
+.text__encrypted {
+    width: 100%;
+    font-size: 1.5rem; /* Match textarea font size */
+    font-weight: 400;
+    font: var(--first-font);
+    letter-spacing: 0.0625rem;
+    padding: 0.625rem;
+    color: #495057;
+    white-space: pre-wrap;  /* Ensure text wraps correctly */
+    word-wrap: break-word;  /* Ensure words wrap correctly */
+    line-height: 1.5; /* Ensure proper line height */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.copy__style {
+    background: var(--forth-color);
+    border-color: var(--third-color);
+    color: var(--third-color);
+    border-radius: 1.5rem;
+    width: 100%;
+    height: 4.1875rem;
+    border: 0.0625rem solid;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: var(--first-font);
+    box-shadow: 0.625rem 0.625rem 0.625rem rgb(0 0 0 / 8%);
+    align-self: center;
+    margin-top: auto; /* Push the button to the bottom */
+}
+
+.copy__style:hover {
+    background: #E9ECF8;
+}

@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --first-color: #F3F5FC;
+    --second-color: #FFFFFF;
+    --third-color: #0A3871;
+    --forth-color: #D8DFE8;
+    --first-font: "Inter", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: var(--first-font);
+    background-color: var(--first-color);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+#snackbar {
+    visibility: hidden; /* Hidden by default */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Center the snackbar */
+    background-color: #333; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 2px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Positioned at the bottom of the screen */
+    z-index: 1; /* Ensure it's above other elements */
+    left: 50%; /* Centered horizontally */
+    bottom: 30px; /* Positioned 30px from the bottom */
+    font-size: 17px; /* Default text size */
+}
+
+#snackbar.show {
+    visibility: visible; /* Show the snackbar */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s; /* Fade in and out */
+    animation: fadein 0.5s, fadeout 0.5s 2.5s; /* Fade in and out */
+}
+
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}

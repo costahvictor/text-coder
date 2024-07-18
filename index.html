@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TextCoder</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/headerstyle.css">
+    <link rel="stylesheet" href="./styles/footerstyle.css">
+    <link rel="stylesheet" href="./styles/mainstyle.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+</head>
+<body>
+    <header class="header__presentation">
+        <div class="header__image">
+            <img class="header__image--style" src="./assets/one-logo.png" alt="One - Oracle Education Logo" href="index.html">
+        </div>
+        <div class="links__social">
+            <a class="links__social--style" href="https://github.com/costahvictor" target="_blank">
+                <img src="./assets/github.png" alt="Github Logo">
+                Github
+            </a>
+            <a class="links__social--style" href="https://www.linkedin.com/in/costahvictor/" target="_blank">
+                <img src="./assets/linkedin.png" alt="LinkedIn Logo">
+                Linkedin
+            </a>
+        </div>
+        <div class="header__title">
+            <img src="./assets/textcoder-logo.png" class="header__title--style" href="index.html">
+        </div>
+    </header>
+    <main class="main__style">
+        <section class="left__section">
+            <div class="container__text">
+                <textarea class="container__content" id="textToDecode" wrap="soft" placeholder="Type your text here..." rows="10" cols="33"></textarea>
+            </div>
+            <div class="bottom__block--style">
+                <div class="warning">
+                    <img class="warning__image--style" src="./assets/bi_exclamation-circle-fill.png" alt="Exclamation mark.">
+                    <h6 class="warning__text--style">Only lower case characters.</h6>
+                </div>
+                <div class="buttons">
+                    <button id="encrypt" onclick="encryptText()" class="encrypt__style">Encrypt</button>
+                    <button id="decrypt" onclick="decryptText()" class="decrypt__style">Decrypt</button>
+                </div>
+            </div>
+        </section>
+        <section class="right__section">
+            <div class="rectangle__style" id="outputContainer">
+                <div class="container__image" id="beforeTextDecoded">
+                    <img class="container__image--style" src="./assets/guylooking.png" alt="A character looking for something with a magnifying glass.">
+                </div>
+                <div class="text__notfound" id="noTextFound">
+                    <h4 class="text__notfound--style">No text found!</h4>
+                    <p class="text__whattodo--style">Type a text you want to encrypt or decrypt.</p>
+                </div>
+                <div class="text__encrypted" id="encryptedTextContainer" style="display:none;">
+                    <h4 class="text__notfound--style"></h4>
+                </div>
+                <button class="copy__style" id="copyButton" style="display:none;">Copy</button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer__style">
+        <p>Developed by Victor Costa</p>
+    </footer>
+    <div id="snackbar">Text copied to clipboard</div> <!-- Snackbar element -->
+    <script src="app.js" defer></script>
+</body>
+</html>
